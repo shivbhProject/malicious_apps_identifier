@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "google-play-scraper": "^9.0.1"
+    "google-play-scraper": "^9.0.1",
+    "requests": "^0.3.0"
   }
 }
