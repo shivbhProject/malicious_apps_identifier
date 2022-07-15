@@ -1,0 +1,43 @@
+[
+  { permission: 'read your contacts', type: 'Contacts' },
+  { permission: 'modify your contacts', type: 'Contacts' },
+  {
+    permission: 'approximate location (network-based)',
+    type: 'Location'
+  },
+  {
+    permission: 'precise location (GPS and network-based)',
+    type: 'Location'
+  },
+  { permission: 'read your text messages (SMS or MMS)', type: 'SMS' },
+  { permission: 'read phone status and identity', type: 'Phone' },
+  {
+    permission: 'read the contents of your USB storage',
+    type: 'Photos/Media/Files'
+  },
+  {
+    permission: 'modify or delete the contents of your USB storage',
+    type: 'Photos/Media/Files'
+  },
+  {
+    permission: 'read the contents of your USB storage',
+    type: 'Storage'
+  },
+  {
+    permission: 'modify or delete the contents of your USB storage',
+    type: 'Storage'
+  },
+  { permission: 'take pictures and videos', type: 'Camera' },
+  {
+    permission: 'view Wi-Fi connections',
+    type: 'Wi-Fi connection information'
+  },
+  {
+    permission: 'read phone status and identity',
+    type: 'Device ID & call information'
+  },
+  { permission: 'view network connections', type: 'Other' },
+  { permission: 'connect and disconnect from Wi-Fi', type: 'Other' },
+  { permission: 'full network access', type: 'Other' },
+  { permission: 'prevent device from sleeping', type: 'Other' }
+]
