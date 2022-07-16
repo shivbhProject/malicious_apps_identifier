@@ -28,10 +28,10 @@ async function main() {
     let filtered_list = [];
     for (const app of allapps) {
         if (app.currency == "INR" && (app.developerEmail == "" || (app.developerEmail.endsWith("@gmail.com")) || (app.developerEmail.endsWith("@hotmail.com")) || (app.developerEmail.endsWith("@yahoo.com")))) {
-            
+
             let perms = await get_permissions(app.appId);
             for (const perm of perms) {
-                if(perm.type=="Camera" || perm.type=="Microphone"){
+                if (perm.type == "Camera" || perm.type == "Microphone") {
                     filtered_list.push(app);
                     console.log(app.title, ", ", app.appId, ", ", app.currency, ", ", app.developerEmail, ", ", perm.type);
                     break;
