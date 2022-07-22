@@ -1,0 +1,11 @@
+loan
+cash
+app
+rupee
+credit
+money
+paisa
+coin
+wallet
+easy
+pocket
