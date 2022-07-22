@@ -6,7 +6,7 @@ from google_play_scraper import permissions
 
 def search_apps(query):
 
-    result = search(query, country="in", n_hits=1)
+    result = search(query, country="in", n_hits=100)
     return result
 
 
@@ -63,9 +63,11 @@ code_start = """
 </head>
 <body>
 <h1>Suspected Apps</h1>
+<div class="mainParent">
 """
 
 code_end = """
+</div>
 </body>
 </html>
 """
