@@ -1,3 +1,4 @@
+from tkinter import N
 from google_play_scraper import app
 from google_play_scraper import search
 from google_play_scraper import permissions
@@ -30,7 +31,8 @@ def filter_permissions(orglist):
     for app in orglist:
         # print(app['appId'])
         # print(type(app['appId']))
-        perms = get_permissions(app['appId'])
+        get_permissions(app['appId'])
+
         # if(perms):
             # print(perms)
         # result.append(perms)
@@ -44,9 +46,10 @@ for term in terms:
     for app in search_apps(term):
         appslist.append(app)
 
-filter_permissions(appslist)
+# filter_permissions(appslist)
 
 # print(get_permissions("com.google.android.apps.translate"))
+
 
 filtered_list = []
 
