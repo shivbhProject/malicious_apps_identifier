@@ -21,7 +21,7 @@ def filter_currency_developer(orglist):
     result = []
     for app in orglist:
         if(app['currency'] == 'INR'):
-            if(app['developer'] == '' or app['developer'].endswith('@gmail.com') or app['developer'].endswith('@hotmail.com') or app['developer'].endswith('@yahoo.com')):
+            if(app['developerEmail'] == '' or app['developerEmail'].endswith('@gmail.com') or app['developerEmail'].endswith('@hotmail.com') or app['developerEmail'].endswith('@yahoo.com')):
                 result.append(app)
     return result
 
